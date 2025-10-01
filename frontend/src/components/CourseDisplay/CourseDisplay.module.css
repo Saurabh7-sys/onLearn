@@ -1,0 +1,24 @@
+.displayWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 786px) {
+  .displayWrapper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .displayWrapper > div {
+    flex: 0 0 80%;
+    margin-right: 1rem;
+    scroll-snap-align: center;
+  }
+}

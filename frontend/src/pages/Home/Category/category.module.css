@@ -1,0 +1,30 @@
+.categorySection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.categorySection h1 {
+  color: var(--color-primary);
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+}
+.categorySection h2 {
+  color: #696984;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 786px) {
+  .categorySection h1 {
+    font-size: 2rem;
+  }
+  .categorySection h2 {
+    font-size: 1.1rem;
+    padding: 0 2%;
+  }
+}

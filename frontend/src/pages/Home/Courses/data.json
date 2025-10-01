@@ -1,0 +1,304 @@
+{
+  "tabs": [
+    {
+      "id": 1,
+      "label": "All Programmes",
+      "API": [
+        {
+          "id": "all-1",
+          "courseImg": "/images/react-basics.jpg",
+          "lengthOfStudent": 120,
+          "duration": "3 months",
+          "title": "React Basics",
+          "description": "Build interactive UIs with React and hooks.",
+          "discountPrice": 499,
+          "price": 999,
+          "slug": "react-basics"
+        },
+        {
+          "id": "all-2",
+          "courseImg": "/images/js-advanced.jpg",
+          "lengthOfStudent": 95,
+          "duration": "4 months",
+          "title": "Advanced JavaScript",
+          "description": "Closures, async, performance and patterns.",
+          "discountPrice": 699,
+          "price": 1299,
+          "slug": "advanced-javascript"
+        },
+        {
+          "id": "all-3",
+          "courseImg": "/images/uiux.jpg",
+          "lengthOfStudent": 80,
+          "duration": "2 months",
+          "title": "UI/UX Fundamentals",
+          "description": "Design basics, Figma and user testing.",
+          "discountPrice": 399,
+          "price": 899,
+          "slug": "uiux-fundamentals"
+        },
+        {
+          "id": "all-4",
+          "courseImg": "/images/business-101.jpg",
+          "lengthOfStudent": 150,
+          "duration": "3 months",
+          "title": "Business Basics",
+          "description": "Intro to business models and strategy.",
+          "discountPrice": 599,
+          "price": 1199,
+          "slug": "business-basics"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "UI/UX Design",
+      "API": [
+        {
+          "id": "uiux-1",
+          "courseImg": "/images/uiux-1.jpg",
+          "lengthOfStudent": 60,
+          "duration": "6 weeks",
+          "title": "Figma for Beginners",
+          "description": "Design interfaces quickly in Figma.",
+          "discountPrice": 299,
+          "price": 699,
+          "slug": "figma-for-beginners"
+        },
+        {
+          "id": "uiux-2",
+          "courseImg": "/images/uiux-2.jpg",
+          "lengthOfStudent": 45,
+          "duration": "2 months",
+          "title": "User Research Basics",
+          "description": "Run interviews, surveys and usability tests.",
+          "discountPrice": 349,
+          "price": 799,
+          "slug": "user-research-basics"
+        },
+        {
+          "id": "uiux-3",
+          "courseImg": "/images/uiux-3.jpg",
+          "lengthOfStudent": 70,
+          "duration": "3 months",
+          "title": "Interaction Design",
+          "description": "Micro-interactions, prototyping and flows.",
+          "discountPrice": 449,
+          "price": 949,
+          "slug": "interaction-design"
+        },
+        {
+          "id": "uiux-4",
+          "courseImg": "/images/uiux-4.jpg",
+          "lengthOfStudent": 40,
+          "duration": "8 weeks",
+          "title": "Portfolio Workshop",
+          "description": "Create a portfolio that gets interviews.",
+          "discountPrice": 399,
+          "price": 899,
+          "slug": "portfolio-workshop"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Business Management",
+      "API": [
+        {
+          "id": "biz-1",
+          "courseImg": "/images/pm-basics.jpg",
+          "lengthOfStudent": 110,
+          "duration": "3 months",
+          "title": "Project Management 101",
+          "description": "Agile, Scrum and basic PM tools.",
+          "discountPrice": 599,
+          "price": 1199,
+          "slug": "project-management-101"
+        },
+        {
+          "id": "biz-2",
+          "courseImg": "/images/finance.jpg",
+          "lengthOfStudent": 80,
+          "duration": "2 months",
+          "title": "Business Finance Basics",
+          "description": "Read financials and manage budgets.",
+          "discountPrice": 499,
+          "price": 999,
+          "slug": "business-finance-basics"
+        },
+        {
+          "id": "biz-3",
+          "courseImg": "/images/marketing.jpg",
+          "lengthOfStudent": 95,
+          "duration": "10 weeks",
+          "title": "Digital Marketing",
+          "description": "SEO, ads and social media strategy.",
+          "discountPrice": 549,
+          "price": 1099,
+          "slug": "digital-marketing"
+        },
+        {
+          "id": "biz-4",
+          "courseImg": "/images/ops.jpg",
+          "lengthOfStudent": 70,
+          "duration": "3 months",
+          "title": "Operations & Strategy",
+          "description": "Process improvement and scaling ops.",
+          "discountPrice": 649,
+          "price": 1299,
+          "slug": "operations-strategy"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Health & Fitness",
+      "API": [
+        {
+          "id": "fit-1",
+          "courseImg": "/images/yoga.jpg",
+          "lengthOfStudent": 200,
+          "duration": "6 weeks",
+          "title": "Yoga for Beginners",
+          "description": "Foundations of yoga and breathing techniques.",
+          "discountPrice": 199,
+          "price": 499,
+          "slug": "yoga-for-beginners"
+        },
+        {
+          "id": "fit-2",
+          "courseImg": "/images/nutrition.jpg",
+          "lengthOfStudent": 150,
+          "duration": "4 weeks",
+          "title": "Nutrition Essentials",
+          "description": "Macros, meal planning and healthy habits.",
+          "discountPrice": 249,
+          "price": 599,
+          "slug": "nutrition-essentials"
+        },
+        {
+          "id": "fit-3",
+          "courseImg": "/images/hiit.jpg",
+          "lengthOfStudent": 95,
+          "duration": "8 weeks",
+          "title": "HIIT Training",
+          "description": "High intensity workouts for fat loss.",
+          "discountPrice": 299,
+          "price": 699,
+          "slug": "hiit-training"
+        },
+        {
+          "id": "fit-4",
+          "courseImg": "/images/mindfulness.jpg",
+          "lengthOfStudent": 130,
+          "duration": "5 weeks",
+          "title": "Mindfulness & Stress Relief",
+          "description": "Meditation practices and stress tools.",
+          "discountPrice": 199,
+          "price": 499,
+          "slug": "mindfulness-stress-relief"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Art & Creativity",
+      "API": [
+        {
+          "id": "art-1",
+          "courseImg": "/images/drawing.jpg",
+          "lengthOfStudent": 85,
+          "duration": "6 weeks",
+          "title": "Drawing Basics",
+          "description": "Sketching, shading and perspective.",
+          "discountPrice": 299,
+          "price": 699,
+          "slug": "drawing-basics"
+        },
+        {
+          "id": "art-2",
+          "courseImg": "/images/photography.jpg",
+          "lengthOfStudent": 75,
+          "duration": "8 weeks",
+          "title": "Photography Essentials",
+          "description": "Camera basics, composition and editing.",
+          "discountPrice": 349,
+          "price": 799,
+          "slug": "photography-essentials"
+        },
+        {
+          "id": "art-3",
+          "courseImg": "/images/watercolor.jpg",
+          "lengthOfStudent": 50,
+          "duration": "4 weeks",
+          "title": "Watercolor Techniques",
+          "description": "Mixing, washes and brush control.",
+          "discountPrice": 249,
+          "price": 599,
+          "slug": "watercolor-techniques"
+        },
+        {
+          "id": "art-4",
+          "courseImg": "/images/creativity.jpg",
+          "lengthOfStudent": 60,
+          "duration": "6 weeks",
+          "title": "Creative Thinking",
+          "description": "Exercises to boost creative ideas.",
+          "discountPrice": 199,
+          "price": 499,
+          "slug": "creative-thinking"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Language Learning",
+      "API": [
+        {
+          "id": "lang-1",
+          "courseImg": "/images/english.jpg",
+          "lengthOfStudent": 220,
+          "duration": "3 months",
+          "title": "English Conversation",
+          "description": "Everyday speaking practice & fluency tips.",
+          "discountPrice": 399,
+          "price": 899,
+          "slug": "english-conversation"
+        },
+        {
+          "id": "lang-2",
+          "courseImg": "/images/spanish.jpg",
+          "lengthOfStudent": 140,
+          "duration": "4 months",
+          "title": "Beginner Spanish",
+          "description": "Basics, common phrases and grammar.",
+          "discountPrice": 349,
+          "price": 799,
+          "slug": "beginner-spanish"
+        },
+        {
+          "id": "lang-3",
+          "courseImg": "/images/japanese.jpg",
+          "lengthOfStudent": 60,
+          "duration": "6 months",
+          "title": "Japanese Starter",
+          "description": "Hiragana, basic grammar and phrases.",
+          "discountPrice": 499,
+          "price": 999,
+          "slug": "japanese-starter"
+        },
+        {
+          "id": "lang-4",
+          "courseImg": "/images/hindi.jpg",
+          "lengthOfStudent": 180,
+          "duration": "2 months",
+          "title": "Hindi for Beginners",
+          "description": "Simple conversations and script intro.",
+          "discountPrice": 299,
+          "price": 699,
+          "slug": "hindi-for-beginners"
+        }
+      ]
+    }
+  ]
+}

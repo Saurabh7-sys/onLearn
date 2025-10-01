@@ -1,0 +1,88 @@
+.coursesSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+.tabsBar {
+  width: 70%;
+}
+.tabsBar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabsBar li {
+  background-color: #ffffff;
+  border: 1px solid var(--color-body);
+  padding: 1%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tabsBar li:hover {
+  transform: scale(1.03);
+}
+
+.activeTab {
+  background-color: var(--color-primary) !important;
+  color: white;
+}
+
+.coursesSection h1 {
+  color: var(--color-secondary);
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+}
+
+.tabsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 2%;
+}
+
+@media (max-width: 786px) {
+  .coursesSection {
+    margin-top: 20%;
+    margin-bottom: -12%;
+  }
+
+  .coursesSection h1 {
+    font-size: 2rem;
+  }
+  .tabsBar ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 2%;
+  }
+  .tabsBar li {
+    background-color: #ffffff;
+    border: 1px solid var(--color-body);
+    width: 120px;
+    height: 60px;
+    padding: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tabsSection {
+    margin-top: 15%;
+  }
+}
