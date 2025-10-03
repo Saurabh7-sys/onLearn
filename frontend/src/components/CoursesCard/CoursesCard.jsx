@@ -47,6 +47,8 @@ const CoursesCard = ({
                     <button onClick={enroll}>Enroll Now</button>
                 </div>
             </section>
+
+
         </div>
     )
 }

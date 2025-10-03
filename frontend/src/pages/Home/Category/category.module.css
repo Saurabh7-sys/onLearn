@@ -1,3 +1,4 @@
+/* Category section */
 .categorySection {
   width: 100%;
   height: 100vh;
@@ -5,6 +6,7 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  margin-top: 2%;
 }
 
 .categorySection h1 {
@@ -17,8 +19,161 @@
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   text-align: center;
+  margin: 3%;
 }
 
+/* Cards layout */
+.CategoryCards {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Single card */
+.cardWrapper {
+  width: 270px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1.5%;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Card hover shadow */
+.cardWrapper:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings inside card */
+.cardWrapper h2 {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
+.cardWrapper h3 {
+  color: #696984;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+/* CTA button (pseudo-element driven text) */
+.ctaBtn {
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px; /* more vertical space for height */
+  min-width: 220px;
+  min-height: 48px; /* ensures good height */
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  color: transparent; /* hide any accidental DOM text */
+}
+
+/* Default visible text */
+.ctaBtn::after {
+  content: "more";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+/* Hover text (hidden by default) */
+.ctaBtn::before {
+  content: "Explore courses";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+/* Trigger button styles when the whole card is hovered */
+.cardWrapper:hover .ctaBtn {
+  background: var(--color-secondary);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Swap pseudo-text on card hover */
+.cardWrapper:hover .ctaBtn::after {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.cardWrapper:hover .ctaBtn::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyboard accessibility: show same effect on focus within the card */
+.cardWrapper:focus-within .ctaBtn,
+.cardWrapper:focus .ctaBtn {
+  background: var(--color-secondary);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+.cardWrapper:focus-within .ctaBtn::after,
+.cardWrapper:focus .ctaBtn::after {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+.cardWrapper:focus-within .ctaBtn::before,
+.cardWrapper:focus .ctaBtn::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Focus ring for the button itself (if user tabs to it directly) */
+.ctaBtn:focus-visible {
+  outline: 3px solid rgba(0, 0, 0, 0.08);
+  outline-offset: 2px;
+}
+
+.viewAllBtn {
+  color: #000 !important;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary) !important;
+  padding: 0.9% 4%;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 4.5%;
+}
+
+.viewAllBtn:hover {
+  color: var(--color-secondary) !important;
+  border: 1px solid var(--color-secondary);
+  transform: scale(1.01);
+}
+
+/* Responsive adjustments */
 @media (max-width: 786px) {
   .categorySection h1 {
     font-size: 2rem;
@@ -26,5 +181,25 @@
   .categorySection h2 {
     font-size: 1.1rem;
     padding: 0 2%;
+  }
+
+  /* stack cards on small screens */
+  .CategoryCards {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .cardWrapper {
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    padding: 2.5%;
+  }
+
+  .ctaBtn {
+    min-width: 180px;
+    padding: 12px 22px;
+    min-height: 44px;
   }
 }
