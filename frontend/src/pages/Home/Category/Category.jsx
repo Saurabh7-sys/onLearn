@@ -30,11 +30,11 @@ const Category = () => {
   // Each card animates as if sliding out from behind the previous one
   const card = {
     hidden: { x: -100, opacity: 0, scale: 0.9 },
-    show: { 
-      x: 0, 
-      opacity: 1, 
-      scale: 1, 
-      transition: { duration: 0.6, ease: "easeOut" } 
+    show: {
+      x: 0,
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.6, ease: "easeOut" }
     },
   };
 
@@ -88,7 +88,10 @@ const Category = () => {
         ))}
       </motion.section>
 
-      <button className={style.viewAllBtn}>view all</button>
+      <motion.button className={style.viewAllBtn} initial={{ opacity: 0, filter: "blur(10px)" }}
+        whileInView={{ opacity: 1, filter: "blur(0px)" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ amount: 0.5, once: false }}>view all</motion.button>
     </div>
   );
 };
